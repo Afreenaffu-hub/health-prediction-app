@@ -6,8 +6,7 @@ import requests
 st.title("Health Prediction Application")
 st.markdown(
     """
-    This application predicts possible health risks using patient blood test values,
-    CRUD operations, and healthcare API integration.
+    This application predicts possible health risks using patient blood test values
     """
 )
 
@@ -27,8 +26,8 @@ def get_health_info():
 
         return "Unable to fetch FDA data."
 
-st.sidebar.title("MIRA Health System")
-st.sidebar.write("AI-powered Healthcare Prediction App")
+st.sidebar.title("Health System")
+st.sidebar.write("Healthcare Prediction App")
 
 # Database Connection
 conn = sqlite3.connect("health_data.db")
